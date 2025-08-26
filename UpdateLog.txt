@@ -1,3 +1,6 @@
+Version 1.7.2
+- Added Apple Silicon (arm64, macOS) support with BrainNet_spm_existfile.mexmaca64 and BrainNet_spm_slice_vol.mexmaca64
+
 Version 1.71
 - Fix a bug in BrainNet_MapCfg.m when loading txt file
 - Fix an incompatible bug in saving figure as vrml format
@@ -5,7 +8,7 @@ Version 1.71
 - Fix a bug in drawing edge size for directed network
 - Modify the position of node colorbar to avoid overlap
 - Modify movie code to increase efficiency
-- Modify layot of 6 brain view to avoid overlap
+- Modify layout of 6 brain view to avoid overlap
 - Fix surface color load compatibility for double brain
 
 Version 1.7 Release 20191031
@@ -34,7 +37,7 @@ Version 1.62 Released 20181031
 
 Version 1.61 Released 20171031
 - Fix a bug in calling custom colormap for volume mapping
-- Fix a bug in inputing threshold for edges
+- Fix a bug in inputting threshold for edges
 - Add a colorbar for node in modular option
 - Add an option to show labels in front for standard layout
 - Fix a bug in controlling the distance between nodes and labels
@@ -45,18 +48,18 @@ Version 1.6 Released 20170403
 - Fix a bug in label setting of option panel
 - Add a colormap for volume mapping
 - Fix a bug when the angle between two nodes in z direction is 180 degree
-- Using gaussian kenrnel in smoothing the ROI culster instead of the default box kernel
+- Using gaussian kernel in smoothing the ROI cluster instead of the default box kernel
 - Change all color squares to pushbuttons
-- Add funtion to fix the colormap range for node
+- Add function to fix the colormap range for node
 - Fix a bug in optional panel when changing layout
-- Add funtion to fix the colormap range for edge
-- Fix a bug when changing the view from sagittal to axial, the image exceedes the boundary
+- Add function to fix the colormap range for edge
+- Fix a bug when changing the view from sagittal to axial, the image exceeds the boundary
 - Add function for define ROI colors from txt file
 - Add support for GIfTI 3D surface
-- Add a swith for displaying 'L' and 'R' or not
+- Add a switch for displaying 'L' and 'R' or not
 - Changed descriptions of the layout
 - Add a layout of lateral, medial and ventral view
-- Dispaly bidirected edges in two lines
+- Display bidirected edges in two lines
 - Add custom colorbar for edges
 - Add custom colorbar for nodes
 - Fix a bug in locating surface file in Linux and Mac
@@ -145,7 +148,7 @@ Version 1.3 Released 20120724
 - Add ROI draw manner
 - Add support for .nii.gz files
 - Add support for directed network
-- Fix an error that edges with value zero are drawed in matrix with negative value while draw all is selected
+- Fix an error that edges with value zero are drawn in matrix with negative value while draw all is selected
 - Add a function to save current colormap
 - Add a function to draw two brains networks in one figure
 - Fix a bug in colorbar arrangement in only positive or only negative situation
@@ -161,8 +164,8 @@ Version 1.21 Released 20120414
 - Fix a compatibility bug of calling from REST
 
 Version 1.2 Released 20120412
-- Add custum colorbar for volume mapping
-- Fix a bug that an error occurs when entering in the edge thershold edit box
+- Add custom colorbar for volume mapping
+- Fix a bug that an error occurs when entering in the edge threshold edit box
 - Add volume & node display manner
 - Add a colormap editor
 - Fix panel display under linux
@@ -175,9 +178,9 @@ Version 1.2 Released 20120412
 
 
 Version 1.1 Released 20111028
-- Add a Interface to REST (http://restfmri.net/forum/), can be called from the Slice Viewer function in REST to draw a vloume-surface mapping graph. (function BrainNet_MapVolumet to draw volume-surface mapping graph by script). 
+- Add a Interface to REST (http://restfmri.net/forum/), can be called from the Slice Viewer function in REST to draw a volume-surface mapping graph. (function BrainNet_MapVolume to draw volume-surface mapping graph by script). 
 - Add a new graph layout called 'Medium view', which would show the lateral and medium side of hemispheres.
-- Integrat SPM NIFTI file lodaing functions, SPM NIFTI or Analyzed files can be supported.
+- Integrate SPM NIFTI file loading functions, SPM NIFTI or Analyzed files can be supported.
 - Add several new colormap for volume-surface mapping function, and algorithm of colormap is adjusted
 - Adjust the position of nodal label.
 - Add a smoothed ICBM152 surface.
