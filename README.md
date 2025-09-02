@@ -1,12 +1,11 @@
 # BrainNetViewer
 
-This is a **fork** of the [official BrainNet Viewer repository](https://github.com/mingruixia/BrainNet-Viewer).  
+This is a fork of the [official BrainNet Viewer repository](https://github.com/mingruixia/BrainNet-Viewer).  
 It includes fixes and updates for Apple Silicon (arm64, macOS) and other improvements.
 
 ## Compiling MEX for Apple Silicon (arm64, macOS) support
 
-By default, BrainNet Viewer relies on SPM’s Intel (`.mexmaci64`) binaries, which do not run natively on Apple Silicon Macs.  
-To build Apple Silicon–native binaries (`.mexmaca64`), edit the SPM Makefiles as follows:
+By default, BrainNet Viewer relies on SPM’s Intel (`.mexmaci64`) binaries, which do not run natively on Apple Silicon Macs. These instructions show how to build Apple Silicon–native binaries (`.mexmaca64`).
 
 Clone SPM12 and go to the source directory:
 ```bash
